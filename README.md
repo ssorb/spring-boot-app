@@ -2,6 +2,8 @@
 Test app exposing JVM metrics at /actuator/prometheus (built from des-felins/spring-boot-k8s-demo)
 
 In minikube env:
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
 
 minikube service spring-boot-app --url
 http://127.0.0.1:61686
